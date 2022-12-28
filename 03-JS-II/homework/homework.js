@@ -6,13 +6,13 @@ function obtenerMayor(x, y) {
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
 if (x > y) {
-  return x
+  return x;
 }
 if (y > x) {
-  return y 
+  return y ;
 }
 if (x === y) {
-  return x
+  return x;
 }
 }
 
@@ -81,15 +81,15 @@ function colors(color) {
   switch (color) {
     case "blue" :
       return "This is blue";
-       case "red" :
-      return "This is red";
-        case "green" :
+    case "red" :
+     return "This is red";
+    case "green" :
       return "This is green";
-         case "orange" :
+      case "orange":
       return "This is orange";
-        default:
-      return "Color not found";
-  }
+      default:
+    return "Color not found";
+    }
 }
 
 
