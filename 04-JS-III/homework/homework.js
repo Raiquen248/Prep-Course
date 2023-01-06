@@ -31,7 +31,7 @@ function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
   // y devuelve el array
-  // Tu código: VEEEEEEEEEEER el primer calculo no tendria el CERO? 
+  // Tu código: 
   var nuevoarray = [];
 for (var i = 0 ; i < array.length ; i++) {
   
@@ -39,7 +39,7 @@ for (var i = 0 ; i < array.length ; i++) {
 }
 return nuevoarray ;
 }
-//asldkjasd
+
 
 
 
@@ -107,7 +107,7 @@ function agregarNumeros(numeros) {
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
-  // Tu código:  USARIA TODO EL CODIGO ANTERIOR REMPLAZANDOLO POR RESULTADOS TEST Y DIVIDIENDOLO (eso creo)
+  // Tu código: SE PUEDE HACER CON EL EJERCICIO ANTERIOR.
     return agregarNumeros(resultadosTest) / resultadosTest.length;
 }
 
@@ -133,8 +133,10 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   if (arguments.length < 1) return 0;
-  var multipli = 1;
-  for (var i = 0 ; i < arguments.length; i++) {
+  if (arguments.length === 1 ) return arguments[0];
+
+  var multipli = arguments[0]
+  for (var i = 1 ; i < arguments.length; i++) {
     multipli = multipli * arguments[i];
   }
   return multipli
@@ -185,8 +187,8 @@ return false
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
-  //Escribe tu código aquí  COMPARA 0-1 1-2 2-3 3-4 y asi hasta terminar el bucle 
-  for (let i = 0 ; i < arreglo.length; i++ ) {
+  //Escribe tu código aquí   
+  for (let i = 0 ; i < arreglo.length -1; i++ ) {
     if (arreglo[i] === arreglo[i+1]) {
       return true; 
     }
